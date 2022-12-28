@@ -1,0 +1,379 @@
+.mega-menu {
+  padding: 15px 0;
+  transition: 0.3s;
+}
+.mega-menu > ul {
+  height: 90vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-top: 1px solid #e0e3ec;
+  transition: 0.3s;
+  width: 320px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: none;
+}
+.mega-menu > ul > ul > li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  background-color: transparent;
+  padding: 10px 23px;
+}
+.mega-menu > ul > ul > li a {
+  font-size: 13px;
+  color: #000000;
+  font-weight: 400;
+  margin-right: 10px;
+}
+.mega-menu > ul > ul > li i {
+  font-size: 20px;
+}
+.mega-menu > ul > li {
+  font-weight: 400;
+  cursor: pointer;
+  color: #00737c;
+  color: rgb(30, 30, 30);
+  padding: 10px 25px 10px 10px;
+}
+.mega-menu > ul > li:hover {
+  color: #00737c;
+  background-color: #fff;
+}
+.mega-menu > ul > li > ul {
+  z-index: 4;
+  top: -20px;
+  right: 250px;
+  display: none;
+}
+.mega-menu > ul > li > ul > li a {
+  color: #707070;
+  font-size: 14px;
+}
+.mega-menu > ul > li > ul > li div {
+  display: none;
+}
+
+.mega-menu > ul > li > a > * {
+  pointer-events: none;
+}
+
+header {
+  z-index: 20000;
+  position: fixed;
+  background: white;
+}
+header .register span {
+  font-size: 22px;
+  cursor: pointer;
+}
+header .register .register-box {
+  position: fixed;
+  width: 100%;
+  height: calc(100vh - 72px);
+  left: 0;
+  top: 72px;
+  background-color: rgba(221, 221, 221, 0.189);
+  transition: 0.2s;
+  opacity: 0;
+  visibility: hidden;
+}
+header .register .register-box #email,
+header .register .register-box #pass {
+  border-color: #cccccc !important;
+}
+header .register .register-box u {
+  font-size: 12px;
+  color: black;
+  font-weight: 500;
+}
+header .register .register-box ul li {
+  background: rgb(245, 245, 245);
+  color: rgb(85, 85, 85);
+  padding: 10px 0;
+  margin: 5px 0;
+  font-size: 13px;
+  font-weight: 600;
+}
+header .register .register-box ul li a {
+  color: rgb(85, 85, 85) !important;
+}
+header .register .register-box > div {
+  padding: 30px 0;
+  width: 280px;
+  transition: 0.4s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translateX(-100%);
+  background-color: white;
+}
+header .register .register-box > div > div {
+  padding: 0 20px;
+}
+header .register .register-box > div h3 {
+  font-size: 18px;
+}
+header .register .register-box > div input {
+  margin: 10px 0;
+}
+header .register .register-box > div .sign-in-btn {
+  border: none;
+  background: rgb(104, 187, 147);
+  color: white;
+  padding: 8px 10px;
+  border-radius: 35px;
+  margin: 10px 5px;
+  font-weight: 500;
+}
+header .register .register-box > div .facebook-btn {
+  border: none;
+  background: white;
+  color: black;
+  padding: 8px 25px 6px 10px;
+  border-radius: 35px;
+  margin: 10px 5px;
+  font-weight: 500;
+  font-size: 13px;
+  box-shadow: 0 3px 7px lightgrey;
+}
+header .register .register-box > div .facebook-btn i {
+  font-size: 25px;
+}
+header .register .register-box > div label {
+  font-size: 10px;
+  word-spacing: 1px;
+  font-weight: lighter;
+  text-align: start;
+}
+header .join-us {
+  font-size: 14px;
+  font-weight: 500;
+}
+header .join-us,
+header .story {
+  font-size: 14px;
+  font-weight: 500;
+}
+header .join-us span,
+header .story span {
+  cursor: pointer;
+}
+header .join-us > div figure::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.4s;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+header .join-us > div figure:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+header .join-us > div figure:hover figcaption {
+  z-index: 4;
+  background: rgb(205, 168, 156);
+}
+header .join-us > div figure figcaption {
+  transition: 0.4s;
+  border-radius: 30px;
+  border: 1px solid white;
+  padding: 6px 20px 2px;
+  font-size: 25px !important;
+  cursor: pointer;
+}
+header .join-us > div,
+header .story > div {
+  display: none;
+  width: 100%;
+  background: white;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 73px;
+  height: 100%;
+  background-color: rgba(112, 112, 112, 0.2156862745);
+}
+header .join-us > div u,
+header .story > div u {
+  font-size: 12px;
+  color: rgb(37, 37, 37);
+  font-weight: 500;
+}
+header .join-us > div .col,
+header .story > div .col {
+  padding: 0;
+}
+header .join-us > div .col figure,
+header .story > div .col figure {
+  position: relative;
+}
+header .join-us > div .col figure img,
+header .story > div .col figure img {
+  width: 100%;
+  max-height: 330px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 5px 3px;
+}
+header .join-us > div .col figure figcaption,
+header .story > div .col figure figcaption {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 35px;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+header .input-groups {
+  background-color: rgb(245, 245, 245);
+  border-radius: 30px;
+  transition: 0.3s;
+}
+header .input-groups input {
+  background: transparent;
+  font-size: 14px;
+}
+header .input-groups button {
+  font-size: 14px;
+  margin-right: 8px;
+}
+header .shop {
+  position: relative;
+}
+header .shop::after {
+  content: "";
+  width: 200px;
+  height: 200px;
+  top: 100%;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  right: -35%;
+}
+header .shop:hover::after {
+  visibility: visible;
+}
+header .shop:hover .shop-menu {
+  display: block;
+}
+header .shop svg {
+  width: 30px;
+}
+header .shop .shop-menu {
+  position: fixed;
+  height: calc(100vh - 72px);
+  right: 0;
+  top: 72px;
+  display: none;
+  background-color: rgba(221, 221, 221, 0.6);
+}
+header .shop .shop-menu > div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 400px;
+}
+header .shop .shop-menu > div p {
+  font-size: 13px;
+  color: gray;
+}
+header .shop .shop-menu > div a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 13px;
+  background-color: #4aaf7e;
+  color: white;
+  width: 85%;
+  border-radius: 30px;
+  margin: 14px;
+}
+
+main {
+  padding-top: 73px;
+}
+main #carouselExampleControls img {
+  max-height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top center;
+     object-position: top center;
+}
+main #carouselExampleControls .text {
+  position: absolute;
+  right: 200px;
+  text-align: center;
+  top: 40%;
+}
+main #carouselExampleControls .text a {
+  border-radius: 50px;
+  padding: 10px 25px;
+  background: rgba(128, 128, 128, 0.626);
+  color: white;
+  width: 150px;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+}
+main #carouselExampleControls .text h2 {
+  font-size: 40px;
+  font-weight: 900;
+}
+main .lists {
+  background-color: #fafafa;
+  border-bottom: 5px solid rgba(211, 211, 211, 0.2588235294);
+}
+main .lists .col {
+  max-width: 150px;
+}
+main .lists .col a {
+  color: rgb(61, 61, 61);
+  font-size: 14px;
+  font-weight: 500;
+}
+main .frist-product .new-items {
+  cursor: pointer;
+  max-width: 230px;
+  margin: 0 6px;
+  height: 100%;
+}
+main .frist-product .new-items:hover img {
+  transform: scale(1.1);
+}
+main .frist-product .new-items figure {
+  width: 100%;
+  height: 65%;
+  overflow: hidden;
+}
+main .frist-product .new-items figure img {
+  transition: 0.4s;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .frist-product .new-items p {
+  font-size: 14px;
+  color: #474747;
+  font-weight: 100;
+  margin-top: 30px;
+}
+main .frist-product .new-items i {
+  margin: 0 2px;
+  color: lightgray;
+  font-size: 14px;
+}/*# sourceMappingURL=style.css.map */

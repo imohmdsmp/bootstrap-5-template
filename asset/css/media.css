@@ -1,0 +1,133 @@
+@media (max-width: 994px) {
+  #weblog .nav-item > ul {
+    position: relative;
+    width: 100%;
+    background: #1f2024;
+    border: none;
+    box-shadow: none;
+  }
+  #weblog .nav-item > ul li a {
+    border: none !important;
+  }
+  #weblog .nav-item > ul li ul {
+    position: relative !important;
+    width: 100% !important;
+    background-color: #1f2024 !important;
+    box-shadow: none;
+    right: 0;
+  }
+  #navbarTogglerDemo03 {
+    overflow-y: scroll;
+    position: fixed;
+    background: #1f2024;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: block;
+    transform: translateX(-100%);
+    transition: 0.3s;
+  }
+  #navbarTogglerDemo03 .fz-12 {
+    font-size: 16px !important;
+  }
+  #navbarTogglerDemo03 i {
+    color: white !important;
+  }
+  #navbarTogglerDemo03 a {
+    color: white !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  #navbarTogglerDemo03 .blue-btn {
+    background: none !important;
+    justify-content: start !important;
+  }
+}
+@media (min-width: 994px) {
+  #mainpage main .main-section-top {
+    background-size: contain;
+    height: 34vw;
+  }
+  #weblog .seccond-slider-img figcaption h2,
+#weblog .first-slider-img figcaption h2 {
+    font-size: 33px;
+    font-weight: 900;
+  }
+  #weblog .seccond-slider-img,
+#weblog .first-slider-img {
+    max-height: 450px;
+  }
+  .mega-menu > ul > li > ul > li div {
+    display: flex;
+  }
+  .user-profile-sidebar {
+    max-width: 225px;
+    margin: 0 15px;
+  }
+  .mega-menu {
+    padding: 15px 0;
+    transition: 0.4s;
+    border: 1px solid white;
+    padding: 12px;
+    border-radius: 5px;
+  }
+  .mega-menu > ul {
+    height: auto;
+    min-height: 40vh;
+    max-height: 95vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-top: 1px solid #e0e3ec;
+    transition: 0.3s;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    top: 72px;
+    display: none;
+  }
+  .mega-menu > ul > li {
+    font-weight: 500;
+    cursor: pointer;
+    color: #00737c;
+    color: rgb(30, 30, 30);
+    width: 259px;
+    padding: 8px 10px 8px 35px;
+    border-right: 1px solid rgba(211, 211, 211, 0.4588235294);
+  }
+  .mega-menu > ul > li:hover {
+    background-color: #fbfbfb;
+  }
+  .mega-menu > ul > li:hover > ul {
+    display: flex;
+  }
+  .mega-menu > ul > li > ul {
+    position: absolute;
+    z-index: 4;
+    top: -20px;
+    left: 250px;
+    width: 70%;
+    margin-top: 15px;
+    display: none;
+  }
+  .mega-menu > ul > li > ul > li a {
+    color: #707070;
+    font-size: 14px;
+  }
+  .mega-menu .line-list {
+    cursor: pointer;
+  }
+  .mega-menu .line-list .line-3,
+.mega-menu .line-list .line-2,
+.mega-menu .line-list .line-1 {
+    width: 25px;
+    height: 2px;
+    background-color: rgb(102, 102, 102);
+    display: flex;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  .logo svg {
+    width: 140px;
+  }
+}/*# sourceMappingURL=media.css.map */

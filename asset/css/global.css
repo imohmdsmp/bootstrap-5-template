@@ -1,0 +1,27 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: iransans;
+}
+
+input:focus-visible {
+  outline: none !important;
+}
+
+figure {
+  margin: 0;
+}/*# sourceMappingURL=global.css.map */
